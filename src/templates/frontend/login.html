@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login</title></head>
+<body style="max-width: 500px; margin: 40px auto; font-family: sans-serif; text-align: center;">
+    <h1>Log In</h1>
+    <div style="margin-top: 20px;">
+		<form method="POST" action="/login">
+			<label>Email address</label>
+			<input type="email" name="email" required />
+			<label>Password</label>
+			<input type="password" name="password" required />
+			<button type="submit">Submit<{{x}}/button>
+		</form>
+		<p style="color: red">
+			<a href="/forgot-password">Forgot password?</a>
+		</p>
+    </div>
+</body>
+</html>
