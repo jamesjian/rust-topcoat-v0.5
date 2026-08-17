@@ -1,0 +1,12 @@
+[package]
+name = "tc"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+dotenvy="0.15"
+html-escape = "0.2.15"
+# tokio + native-tls
+sqlx = { version = "0.8", features = [ "runtime-tokio", "tls-native-tls","mysql" ] }
+tokio = {version = "1.53.1", features=["rt-multi-thread", "macros"]}
+topcoat = "0.5.0"
